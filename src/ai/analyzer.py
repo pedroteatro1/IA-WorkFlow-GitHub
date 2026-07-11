@@ -1,8 +1,4 @@
 def analisar_texto(texto):
-    """
-    Função simples de análise de sentimento.
-    Futuramente será substituída por um modelo de IA real.
-    """
 
     palavras_positivas = [
         "feliz",
@@ -10,34 +6,24 @@ def analisar_texto(texto):
         "excelente",
         "bom",
         "sucesso",
-        "amor"
+        "amor",
+        "amo"
     ]
 
     palavras_negativas = [
         "ruim",
         "péssimo",
-        "triste",
-        "erro",
-        "problema"
+        "triste"
     ]
 
     texto = texto.lower()
 
-    pontos = 0
-
     for palavra in palavras_positivas:
         if palavra in texto:
-            pontos += 1
+            return "Sentimento positivo ❤️"
 
     for palavra in palavras_negativas:
         if palavra in texto:
-            pontos -= 1
+            return "Sentimento negativo 😞"
 
-    if pontos > 0:
-        return "Positivo 😀"
-
-    elif pontos < 0:
-        return "Negativo 😞"
-
-    else:
-        return "Neutro 😐"
+    return "Neutro 😐"
