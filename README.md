@@ -224,6 +224,6 @@ Esses resultados demonstram como a Inteligência Artificial e a automação vêm
 
 # 👨‍💻 Autor
 
-**Pedro Henrique Araújo Silva**
+**Pedro Henrique Araujo Silva**
 
 Projeto desenvolvido como estudo de caso para a disciplina, aplicando conceitos de Inteligência Artificial, Python, testes automatizados, GitHub Actions e GitHub Copilot.
