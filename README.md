@@ -61,10 +61,13 @@ IA-WorkFlow-GitHub
 ## 1. Clonar o repositório
 
 ```bash
-git clone URL_DO_REPOSITORIO
+git clone https://github.com/pedroteatro1/IA-WorkFlow-GitHub.git
 
 ## 📷 Demonstração
 
 ### Interface Streamlit
 
-![Tela da aplicação](exemplos/tela_streamlit.png)
+![Tela da aplicação](exemplos/tela_streamlit.1png)
+![Tela da aplicação](exemplos/tela_streamlit.2png)
+![Tela da aplicação](exemplos/tela_streamlit.3png)
+![Tela da aplicação](exemplos/tela_streamlit123png)
