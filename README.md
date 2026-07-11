@@ -55,10 +55,10 @@ IA-WorkFlow-GitHub
 │   └── test_analyzer.py
 │
 ├── exemplos
-│   ├── tela_streamlit1.png
-│   ├── tela_streamlit2.png
-│   ├── tela_streamlit3.png
-│   └── tela_streamlit4.png
+│   ├── tela_streamlit.1.png
+│   ├── tela_streamlit.2.png
+│   ├── tela_streamlit.3.png
+│   └── tela_streamlit123.png
 │
 ├── pytest.ini
 ├── requirements.txt
