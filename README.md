@@ -62,3 +62,9 @@ IA-WorkFlow-GitHub
 
 ```bash
 git clone URL_DO_REPOSITORIO
+
+## 📷 Demonstração
+
+### Interface Streamlit
+
+![Tela da aplicação](exemplos/tela_streamlit.png)

@@ -1,33 +1,60 @@
 import streamlit as st
-
 from ai.analyzer import analisar_texto
 
 
 st.set_page_config(
-    page_title="Analisador de Sentimentos IA",
+    page_title="IA WorkFlow - Analisador de Sentimentos",
     page_icon="🤖"
 )
 
 
-st.title("🤖 Analisador de Sentimentos IA")
+st.title("🤖 IA WorkFlow")
+st.subheader("Analisador de Sentimentos com Inteligência Artificial")
+
 
 st.write(
-    "Digite uma frase e descubra o sentimento identificado pelo modelo."
+    """
+Digite uma frase e a IA irá analisar se o sentimento é:
+- ❤️ Positivo
+- 😞 Negativo
+- 😐 Neutro
+"""
 )
 
 
 texto = st.text_area(
-    "Digite seu texto:"
+    "Digite seu texto:",
+    placeholder="Exemplo: Eu amo programação Python!"
 )
 
 
-if st.button("Analisar"):
+if st.button("🔍 Analisar sentimento"):
 
-    if texto.strip():
-
-        resultado = analisar_texto(texto)
-
-        st.success(resultado)
+    if texto.strip() == "":
+        st.warning("Digite algum texto para analisar.")
 
     else:
-        st.warning("Digite um texto antes de analisar.")
+        resultado = analisar_texto(texto)
+
+        st.divider()
+
+        st.subheader("Resultado da análise:")
+
+        if "positivo" in resultado.lower():
+            st.success(resultado)
+
+        elif "negativo" in resultado.lower():
+            st.error(resultado)
+
+        else:
+            st.info(resultado)
+
+
+        quantidade_palavras = len(texto.split())
+
+        st.divider()
+
+        st.metric(
+            label="Quantidade de palavras",
+            value=quantidade_palavras
+        )
