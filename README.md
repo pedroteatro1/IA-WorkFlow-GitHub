@@ -167,13 +167,13 @@ exemplos/
 ```
 
 ```md
-![Tela 1](exemplos/tela_streamlit1.png)
+![Tela 1](exemplos/tela_streamlit.1.png)
 
-![Tela 2](exemplos/tela_streamlit2.png)
+![Tela 2](exemplos/tela_streamlit.2.png)
 
-![Tela 3](exemplos/tela_streamlit3.png)
+![Tela 3](exemplos/tela_streamlit.3.png)
 
-![Tela 4](exemplos/tela_streamlit4.png)
+![Tela 4](exemplos/tela_streamlit123.png)
 ```
 
 ---
