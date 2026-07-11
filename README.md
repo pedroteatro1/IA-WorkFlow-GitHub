@@ -156,7 +156,7 @@ A interface foi desenvolvida utilizando **Streamlit**, permitindo que o usuário
 
 ## Interface Streamlit
 
-> **Importante:** Ajuste os nomes das imagens conforme os arquivos existentes na pasta `exemplos`.
+
 
 ```text
 exemplos/
