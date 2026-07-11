@@ -1,37 +1,27 @@
-def analisar_texto(texto):
-    palavras_positivas = [
-        "feliz",
-        "ótimo",
-        "excelente",
-        "bom",
-        "sucesso",
-        "amor",
-        "amo"
-    ]
+from ai.palavras import PALAVRAS_POSITIVAS, PALAVRAS_NEGATIVAS
 
-    palavras_negativas = [
-        "ruim",
-        "péssimo",
-        "triste"
-    ]
+
+def analisar_texto(texto):
 
     texto = texto.lower()
 
     pontos = 0
 
-    for palavra in palavras_positivas:
+    for palavra in PALAVRAS_POSITIVAS:
         if palavra in texto:
             pontos += 1
 
-    for palavra in palavras_negativas:
+    for palavra in PALAVRAS_NEGATIVAS:
         if palavra in texto:
             pontos -= 1
 
     if pontos > 0:
-        return "Sentimento positivo ❤️"
+        sentimento = "Sentimento positivo ❤️"
 
     elif pontos < 0:
-        return "Sentimento negativo 😞"
+        sentimento = "Sentimento negativo 😞"
 
     else:
-        return "Neutro 😐"
+        sentimento = "Neutro 😐"
+
+    return f"{sentimento} | Pontuação: {pontos}"

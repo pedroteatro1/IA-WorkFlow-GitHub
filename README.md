@@ -1,37 +1,64 @@
-# IA-WorkFlow-GitHub
+# 🤖 IA Workflow - Analisador de Sentimentos
 
-Projeto de estudo sobre criação de workflows utilizando Inteligência Artificial, Python e boas práticas de desenvolvimento.
+## 📌 Sobre o projeto
 
-## 📌 Objetivo
+Este projeto apresenta uma aplicação prática de Inteligência Artificial utilizando Python para análise de sentimentos em textos.
 
-Este projeto tem como objetivo explorar a criação de fluxos automatizados utilizando conceitos de Inteligência Artificial, organização de código e ferramentas de desenvolvimento.
+O sistema recebe uma frase digitada pelo usuário e realiza uma classificação básica de sentimento, identificando se o texto possui característica:
 
-## 🚀 Tecnologias utilizadas
+- ❤️ Positiva
+- 😞 Negativa
+- 😐 Neutra
 
-- Python
-- Inteligência Artificial
+O projeto foi desenvolvido como estudo de caso para demonstrar organização de código, testes automatizados e criação de uma interface interativa utilizando Streamlit.
+
+---
+
+# 🎯 Objetivo
+
+Desenvolver uma aplicação simples baseada em regras de processamento de texto capaz de:
+
+- Analisar mensagens fornecidas pelo usuário;
+- Identificar palavras associadas a sentimentos;
+- Gerar uma classificação de sentimento;
+- Exibir o resultado através de uma interface web.
+
+---
+
+# 🛠️ Tecnologias utilizadas
+
+- Python 3
+- Streamlit
+- Pytest
 - Git e GitHub
-- Ambiente virtual Python (.venv)
+- Virtual Environment (.venv)
 
-## 📂 Estrutura do projeto
+---
 
-IA-WorkFlow-GitHub/
+# 📂 Estrutura do projeto
+IA-WorkFlow-GitHub
 │
-├── src/
-│ └── main.py # Código principal da aplicação
+├── app.py
 │
-├── data/ # Dados utilizados pelo projeto
+├── src
+│ └── ai
+│ ├── analyzer.py
+│ ├── palavras.py
+│ └── main.py
 │
-├── models/ # Modelos de IA treinados
+├── tests
+│ └── test_analyzer.py
 │
-├── notebooks/ # Estudos e experimentos
-│
-├── requirements.txt # Dependências Python
-│
-└── README.md # Documentação do projeto
-## ▶️ Como executar
+├── pytest.ini
+├── requirements.txt
+└── pyproject.toml
 
-Clone o projeto:
+
+---
+
+# ⚙️ Como executar o projeto
+
+## 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/pedroteatro1/IA-WorkFlow-GitHub.git
+git clone URL_DO_REPOSITORIO
