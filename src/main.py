@@ -1,5 +1,14 @@
+from ai.analyzer import analisar_texto
+
+
 def main():
-    print("IA Workflow iniciado com sucesso!")
+
+    texto = input("Digite um texto para análise: ")
+
+    resultado = analisar_texto(texto)
+
+    print("\nResultado da análise:")
+    print(resultado)
 
 
 if __name__ == "__main__":
